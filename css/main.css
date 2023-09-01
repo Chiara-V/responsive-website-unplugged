@@ -103,6 +103,7 @@ h2,
 h3,
 h4 {
 	font-family: 'Poppins', sans-serif;
+  width: 100%;
 }
 
 h1 {
@@ -131,10 +132,16 @@ nav {
 }
 
 header,
-main,
-footer {
+main {
   display: flex;
   justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .content-wrapper {
@@ -142,12 +149,15 @@ footer {
 	width: 90%;
 	display: flex;
 	justify-content: center;
-	flex-flow: row wrap;
 }
 
 /******** HEADER STYLES ********/
 header {
 	text-align: center;
+}
+
+header .content-wrapper {
+	flex-flow: row wrap;
 }
 
 #logo-container {
@@ -181,6 +191,117 @@ header nav ul li {
 header nav ul li a {
 	text-decoration: none;
   color: #e2e3ed;
+}
+
+/********  MAIN STYLES ********/
+#hero,
+aside,
+#features {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#hero {
+}
+
+#hero h1 {
+}
+
+aside {
+}
+
+aside .content-wrapper {
+}
+
+.aside-text {
+}
+
+aside .sign-up-form {
+}
+
+#features {
+  flex-flow: row wrap;
+}
+
+.all-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-flow: row wrap;
+}
+
+.features-section {
+  justify-content: space-between;
+}
+
+.features-icon {
+}
+
+#reviews {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.reviews-image {
+}
+
+.team-review {
+}
+
+/********  FOOTER STYLES ********/
+#contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-data {
+}
+
+#social {
+  display: flex;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#copyright {
+  display: flex;
+}
+
+/********  ABOUT PAGE STYLES ********/
+#mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map {
+}
+
+figure {
+}
+
+#address {
+}
+
+.general-contact-info {
+}
+
+.chat-info {
+}
+
+/********  FAQ PAGE STYLES ********/
+.all-questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.question {
 }
 
 
