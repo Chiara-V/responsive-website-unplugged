@@ -87,6 +87,97 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+ /******** GLOBAL STYLES ********/
+html {
+	font-size:16px;
+}
+
+body {
+	font-family: 'Open sans', sans-serif;
+	font-size: 1em;
+	color: #e2e3ed;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
+}
+
+h2 {
+	font-size: 1.88em;
+}
+
+h3,
+h4 {
+	font-size: 1.125em;
+}
+
+p {
+	font-size: .8750rem;
+  line-height: 18px;
+}
+
+nav {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+/**input text here --form**/
+
+/**features icons here**/
+
+#social img {
+  font-size: 1.3125em;
+  font-weight: bold;
+  color: #527158;
+}
+
+header,
+footer {
+  background-color: #202322;
+}
+
+/*about styles
+#address {
+  font-style: normal;
+}
+*/
+
+
+/************* HOMEPAGE *************/
+
+
+
+/**DESKTOP
+
+h1 {
+	font-size: 3.75em;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+h3,
+h4 {
+	font-size: 1.88em;
+}
+
+p {
+	font-size: 1.125rem;
+  line-height: 24px;
+}
+
+**/
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
