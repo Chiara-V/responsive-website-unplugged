@@ -19,17 +19,24 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
     <header>
       <div class="content-wrapper">
-        <img src="img/unpluggedlogo.png" alt="charging battery unplugged logo">
+        <div id="logo-container">
+          <a href="#"><img src="img/unpluggedlogo.png" alt="charging battery unplugged logo"></a>
+        </div>
+        
         <nav>
           <ul>
-            <li>faq</li>
-            <li>abut</li>
+            <li><a href="faq/index.html">Faq</a></li>
+            <li><a href="about/index.html">About</a></li>
           </ul>
         </nav>
       </div>
@@ -41,8 +48,8 @@
         <h1>Retreat from the desk, return refreshed.</h1>
       </section>
 
-      <!--JOIN SECTION-->
-      <section id="join">
+      <!--ASIDE SECTION-->
+      <aside>
         <div class="content-wrapper">
           <div class="join-text">
             <h3>Want to join the next retreat?</h3>
@@ -54,7 +61,7 @@
             <!--FORM HERE-->
           </div>
         </div>
-      </section>
+      </aside>
 
       <!--FEEATURES SECTION-->
       <section id="features">
@@ -93,12 +100,12 @@
         </div>
       </section>
 
-      <!--CUSTOMER EXPERIENCE SECTION-->
-      <section id="customer-experience">
+      <!--REVIEWS SECTION-->
+      <section id="reviews">
         <div class="content-wrapper">
           <h2>Be a better team in 5 days, like this one.</h2>
 
-            <div class="customer-experience-image">
+            <div class="reviews-image">
               <img src="img/unplugged-retreat-lacrue.jpg" alt="team of coworkers in nature">
             </div>
 
