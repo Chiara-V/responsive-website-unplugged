@@ -98,6 +98,25 @@ body {
 	color: #e2e3ed;
 }
 
+html,
+body {
+	margin: 0;
+}
+
+header,
+main,
+footer {
+  height: 100%;
+  justify-content: center;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
 h1,
 h2,
 h3,
@@ -109,11 +128,12 @@ h4 {
 h1 {
 	font-size: 2.25em;
   line-height: 43px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 h2 {
 	font-size: 1.88em;
+  padding-top: 20px;
 }
 
 h3,
@@ -126,61 +146,40 @@ p {
   line-height: 18px;
 }
 
-nav {
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-
-header,
-main {
-  display: flex;
-  justify-content: center;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 .content-wrapper {
-	max-width: 1200px;
-	width: 90%;
-	display: flex;
-	justify-content: center;
+  width: 90%;
 }
 
 /******** HEADER STYLES ********/
-header {
-	text-align: center;
-}
-
 header .content-wrapper {
-	flex-flow: row wrap;
 }
 
 #logo-container {
-	justify-content: center;
-	width: 100%;
   border-bottom: 2px #3a3a3a solid;
+  text-align: center;
 }
 
-header img {
-	justify-content: center;
-	width: 50%;
-  padding: 20px 40px;
+#logo-container img {
+  width: 30%;
+  padding: 20px 0;
 }
 
-header nav {
-	justify-content: center;
-	flex-flow: row wrap;
-  width: 50%;
+nav {
+  font-size: 1.125rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav ul {
+  margin: 0;
+	padding: 20px 0;
   display: flex;
-  justify-content: space-between;		
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 60%;
 }
 
 header nav ul li {
@@ -198,19 +197,31 @@ header nav ul li a {
 aside,
 #features {
   display: flex;
-  justify-content: flex-start;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 #hero {
+  background-image: url('../img/unplugged-retreat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
 }
 
 #hero h1 {
+  width: 90%;
+  margin: 0;
+  padding-top: 50px;
 }
 
 aside {
+  background-color: #527158;
 }
 
 aside .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .aside-text {
@@ -220,62 +231,116 @@ aside .sign-up-form {
 }
 
 #features {
-  flex-flow: row wrap;
+  background-image: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#features h2 {
+  
 }
 
 .all-features {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  flex-flow: row wrap;
+  padding-bottom: 50px;
 }
 
 .features-section {
-  justify-content: space-between;
+  width: 50%;
+  text-align: center;
 }
 
 .features-icon {
 }
 
 #reviews {
+  background-color: #2a423a;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-bottom: 50px;
+}
+
+#reviews .content-wrapper {
 }
 
 .reviews-image {
+  width: 90%;
+}
+
+.reviews-image img {
+  max-width: 100%
 }
 
 .team-review {
 }
 
 /********  FOOTER STYLES ********/
-#contact-info {
+footer .content-wrapper{
   display: flex;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-info {
+  text-align: center;
 }
 
 #contact-data {
+  padding-bottom: 20px;
+}
+
+#contact-data a {
+  text-decoration: none;
+  color: #e2e3ed;
 }
 
 #social {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#social h4 {
+  text-align: center;
 }
 
 .social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.social-icons ul li {
+	list-style: none;
+}
+
+.social-icons ul li a {
+	text-decoration: none;
+  color: #e2e3ed;
 }
 
 #copyright {
-  display: flex;
+  padding-bottom: 20px;
 }
 
 /********  ABOUT PAGE STYLES ********/
 #mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #527158;
 }
 
 #map {
@@ -295,16 +360,18 @@ figure {
 
 /********  FAQ PAGE STYLES ********/
 .all-questions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .question {
 }
 
-
+/*******TABLET******/
+@media screen and (max-width: 768px) {
+  .element {
+    width: 100%; 
+  }
+}
 
 /**input text here --form**/
 
