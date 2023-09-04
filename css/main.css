@@ -150,10 +150,11 @@ p {
   width: 90%;
 }
 
-/******** HEADER STYLES ********/
-header .content-wrapper {
-}
+/* ------------------- Mobile Styles - HOMEPAGE ----------------- */
 
+/* HEADER */
+
+/* Logo */
 #logo-container {
   border-bottom: 2px #3a3a3a solid;
   text-align: center;
@@ -164,6 +165,7 @@ header .content-wrapper {
   padding: 20px 0;
 }
 
+/* Navigation */
 nav {
   font-size: 1.125rem;
   font-weight: bold;
@@ -192,7 +194,7 @@ header nav ul li a {
   color: #e2e3ed;
 }
 
-/********  MAIN STYLES ********/
+/* MAIN */
 #hero,
 aside,
 #features {
@@ -201,6 +203,7 @@ aside,
   justify-content: center;
 }
 
+/* Hero section */
 #hero {
   background-image: url('../img/unplugged-retreat.jpg');
   background-size: cover;
@@ -215,6 +218,7 @@ aside,
   padding-top: 50px;
 }
 
+/* Aside */
 aside {
   background-color: #527158;
 }
@@ -227,9 +231,11 @@ aside .content-wrapper {
 .aside-text {
 }
 
+/* Aside Form */
 aside .sign-up-form {
 }
 
+/* Features section */
 #features {
   background-image: url('../img/unplugged-retreat-features.jpg');
   background-size: cover;
@@ -257,6 +263,7 @@ aside .sign-up-form {
 .features-icon {
 }
 
+/*Reviews section*/
 #reviews {
   background-color: #2a423a;
   display: flex;
@@ -279,7 +286,7 @@ aside .sign-up-form {
 .team-review {
 }
 
-/********  FOOTER STYLES ********/
+/* FOOTER */
 footer .content-wrapper{
   display: flex;
   flex-flow: column wrap;
@@ -287,6 +294,7 @@ footer .content-wrapper{
   align-items: center;
 }
 
+/* Contact section */
 #contact-info {
   text-align: center;
 }
@@ -300,6 +308,7 @@ footer .content-wrapper{
   color: #e2e3ed;
 }
 
+/* Social section */
 #social {
   display: flex;
   flex-flow: row wrap;
@@ -338,7 +347,10 @@ footer .content-wrapper{
   padding-bottom: 20px;
 }
 
-/********  ABOUT PAGE STYLES ********/
+/* ====================================
+Mobile Styles - ABOUT PAGE 
+======================================= */
+
 #mission {
   background-color: #527158;
 }
@@ -358,7 +370,9 @@ figure {
 .chat-info {
 }
 
-/********  FAQ PAGE STYLES ********/
+/*====================================
+Mobile styles - FAQ PAGE
+====================================== */
 .all-questions {
   background-color: #527158;
 }
