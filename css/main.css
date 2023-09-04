@@ -229,26 +229,33 @@ footer .content-wrapper{
   text-align: center;
 }
 
-.social-icons {
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-icons ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row nowrap;
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
-.social-icons ul li {
-	list-style: none;
-}
-
-.social-icons ul li a {
-	text-decoration: none;
+footer .social-icons a {
+  text-decoration: none;
   color: #e2e3ed;
+}
+
+footer .second-icon {
+  margin: 0 20px;
 }
 
 #copyright {
@@ -347,6 +354,16 @@ form {
 .features-section {
   width: 50%;
   text-align: center;
+  padding-bottom: 40px;
+}
+
+.fontawesome-icon {
+  color: #e2e3ed;
+}
+
+.features-section i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features-icon {
