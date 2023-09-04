@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>About | Unplugged</title>
+  <title>About | Unplugged Retreat</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -25,11 +25,13 @@
 <body>
   <header>
     <div class="content-wrapper">
-      <a href="../index.html#home"><img src="../img/unpluggedlogo.png" alt="charging battery unplugged logo"></a>
+      <div id="logo-container">
+        <a href="../index.html#"><img src="../img/unpluggedlogo.png" alt="charging battery unplugged logo"></a>
+      </div>
       <nav>
         <ul>
           <li><a href="../faq/index.html">Faq</a></li>
-          <li><a href="../about/index.html">About</a></li>
+          <li><a href="about/index.html">About</a></li>
         </ul>
       </nav>
     </div>
@@ -50,28 +52,29 @@
       </div>
     </section>
 
-    <section id="map">
-      <!--embed map here-->
+    <section class="map">
       <figure>
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53507.80801038904!2d-71.61104854999999!3d-33.05020045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dde3de20cec7%3A0xeb0a3a8cbfe19b76!2sValpara%C3%ADso%2C%20Cile!5e0!3m2!1sit!2sit!4v1693823155744!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </figure>
     </section>
 
-    <section id="address">
-      <h2></h2>
-        <div class="general-contact-info">
-          <h4>General information</h4>
-          <address>
-            333 Main St, Lake Geneva, WI 53147
-            555-555-5555
-            <a href="mailto:hello@unplugged.com">hello@unplugged.com</a>
-          </address>
-        </div>
+    <section id="address-info">
+      <div class="content-wrapper">
+        <h2>Contact us, because you all need this.</h2>
+          <div class="general-contact-info">
+            <h4>General information</h4>
+            <address>
+              333 Main St, Lake Geneva, WI 53147<br>
+              555-555-5555<br>
+              <a href="mailto:hello@unplugged.com">hello@unplugged.com</a>
+            </address>
+          </div>
 
-        <div class="chat-info">
-          <h4>Chat with a facilitator</h4>
-          <p>555-555-5556<br>
-          <a href="mailto:facilitator@unplugged.com">facilitator@unplugged.com</a></p>
+          <div class="chat-info">
+            <h4>Chat with a facilitator</h4>
+            <p>555-555-5556<br>
+            <a href="mailto:facilitator@unplugged.com">facilitator@unplugged.com</a></p>
+          </div>
         </div>
     </section>
   </main>
@@ -81,17 +84,21 @@
 
       <div id="contact-info">
         <h4>Contact</h4> 
-        <address>
-          555-555-5555<br>
-          <a href="mailto:hello@unplugged.com">hello@unplugged.com</a>
-        </address>
+        <div id="contact-data">
+          <p>555-555-5555<br>
+          <a href="mailto:hello@unplugged.com">hello@unplugged.com</a></p>
+        </div>
       </div>
 
       <div id="social">
         <h4>Social</h4>
-        <li><a href="https://it-it.facebook.com/" target="_blank"><img src="" alt="facebook icon"></a></li>
-        <li><a href="https://twitter.com/?lang=it" target="_blank"><img src="" alt="twitter icon"></a></li>
-        <li><a href="https://www.instagram.com/" target="_blank"><img src="" alt="instagram icon"></a></li>
+        <div class="social-icons">
+          <ul>
+            <li><a href="https://it-it.facebook.com/" target="_blank"><img src="" alt="facebook icon"></a></li>
+            <li><a href="https://twitter.com/?lang=it" target="_blank"><img src="" alt="twitter icon"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="" alt="instagram icon"></a></li>
+          </ul>
+        </div>
       </div>
 
       <div id="copyright">

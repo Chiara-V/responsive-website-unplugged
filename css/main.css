@@ -150,8 +150,7 @@ p {
   width: 90%;
 }
 
-/* ------------------- Mobile Styles - HOMEPAGE ----------------- */
-
+/* --- BASE HEADER AND FOOTER STYLES --- */
 /* HEADER */
 
 /* Logo */
@@ -194,104 +193,13 @@ header nav ul li a {
   color: #e2e3ed;
 }
 
-/* MAIN */
-#hero,
-aside,
-#features {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-/* Hero section */
-#hero {
-  background-image: url('../img/unplugged-retreat.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-}
-
-#hero h1 {
-  width: 90%;
-  margin: 0;
-  padding-top: 50px;
-}
-
-/* Aside */
-aside {
-  background-color: #527158;
-}
-
-aside .content-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.aside-text {
-}
-
-/* Aside Form */
-aside .sign-up-form {
-}
-
-/* Features section */
-#features {
-  background-image: url('../img/unplugged-retreat-features.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#features h2 {
-  
-}
-
-.all-features {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-}
-
-.features-section {
-  width: 50%;
-  text-align: center;
-}
-
-.features-icon {
-}
-
-/*Reviews section*/
-#reviews {
-  background-color: #2a423a;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  padding-bottom: 50px;
-}
-
-#reviews .content-wrapper {
-}
-
-.reviews-image {
-  width: 90%;
-}
-
-.reviews-image img {
-  max-width: 100%
-}
-
-.team-review {
-}
-
 /* FOOTER */
 footer .content-wrapper{
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 
 /* Contact section */
@@ -347,37 +255,201 @@ footer .content-wrapper{
   padding-bottom: 20px;
 }
 
+/* ------------------- Mobile Styles - HOMEPAGE ----------------- */
+/* MAIN */
+#hero,
+aside,
+#features {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* Hero section */
+#hero {
+  background-image: url('../img/unplugged-retreat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+#hero h1 {
+  width: 90%;
+  margin: 0;
+  padding-top: 50px;
+}
+
+/* Aside */
+aside {
+  background-color: #527158;
+}
+
+aside .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.aside-text {
+  padding-top: 50px;
+}
+
+/* Aside Form */
+aside .sign-up-form {
+  padding-bottom: 50px;
+}
+
+form {
+  width: 100%;
+}
+
+/* Text input */
+.sign-up-form input[type="text"] {
+  width: 100%; 
+  padding: 10px;
+  color: #2a423a;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Button input */
+.sign-up-form input[type="button"] {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #2a423a;
+  color: #fff; 
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Hover effect for the button */
+.sign-up-form input[type="button"]:hover {
+  background-color: #3a5240; /* Change background color on hover */
+}
+
+/* Features section */
+#features {
+  background-image: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.all-features {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.features-section {
+  width: 50%;
+  text-align: center;
+}
+
+.features-icon {
+}
+
+/*Reviews section*/
+#reviews {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-bottom: 50px;
+}
+
+#reviews .content-wrapper {
+}
+
+.reviews-image {
+  width: 90%;
+}
+
+.reviews-image img {
+  max-width: 100%
+}
+
+.team-review {
+}
+
 /* ====================================
 Mobile Styles - ABOUT PAGE 
 ======================================= */
 
 #mission {
   background-color: #527158;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-#map {
+#mission .content-wrapper {
+  padding-bottom: 50px;
 }
 
-figure {
+.map figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%; 
+  overflow: hidden;
+  position: relative;
 }
 
-#address {
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+}
+
+#address-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  background-color: #2a423a;
+}
+
+#address-info h2{
+  width: 90%;
 }
 
 .general-contact-info {
+  width: 90%;
 }
 
-.chat-info {
+.general-contact-info a,
+.chat-info a {
+  text-decoration: none;
+  color: #e2e3ed;
 }
 
 /*====================================
 Mobile styles - FAQ PAGE
 ====================================== */
-.all-questions {
+.faq {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   background-color: #527158;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.faq h2 {
+  margin: 0;
 }
 
 .question {
+  padding: 25px 0;
 }
 
 /*******TABLET******/
