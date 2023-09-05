@@ -150,6 +150,14 @@ p {
   width: 90%;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 /* --- BASE HEADER AND FOOTER STYLES --- */
 /* HEADER */
 
@@ -274,10 +282,8 @@ aside,
 
 /* Hero section */
 #hero {
-  background-image: url('../img/unplugged-retreat.jpg');
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 500px;
 }
 
@@ -313,7 +319,7 @@ form {
 /* Text input */
 .sign-up-form input[type="text"] {
   width: 100%; 
-  padding: 10px;
+  padding: 15px;
   color: #2a423a;
   margin-bottom: 10px;
   box-sizing: border-box;
@@ -322,12 +328,13 @@ form {
 /* Button input */
 .sign-up-form input[type="button"] {
   width: 100%;
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-color: #2a423a;
   color: #fff; 
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 /* Hover effect for the button */
@@ -366,9 +373,6 @@ form {
   margin-bottom: 40px;
 }
 
-.features-icon {
-}
-
 /*Reviews section*/
 #reviews {
   background-color: #2a423a;
@@ -379,17 +383,10 @@ form {
 }
 
 #reviews .content-wrapper {
-}
-
-.reviews-image {
-  width: 90%;
-}
-
-.reviews-image img {
-  max-width: 100%
-}
-
-.team-review {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-top: 30px;
 }
 
 /* ====================================
@@ -469,16 +466,6 @@ Mobile styles - FAQ PAGE
   padding: 25px 0;
 }
 
-/*******TABLET******/
-@media screen and (max-width: 768px) {
-  .element {
-    width: 100%; 
-  }
-}
-
-/**input text here --form**/
-
-/**features icons here**/
 
 #social img {
   font-size: 1.3125em;
@@ -491,36 +478,6 @@ footer {
   background-color: #202322;
 }
 
-/*about styles
-#address {
-  font-style: normal;
-}
-*/
-
-
-/************* HOMEPAGE *************/
-
-
-
-/**DESKTOP
-
-h1 {
-	font-size: 3.75em;
-}
-
-h2 {
-	font-size: 2.25em;
-}
-
-h3,
-h4 {
-	font-size: 1.88em;
-}
-
-p {
-	font-size: 1.125rem;
-  line-height: 24px;
-}
 
 **/
 
@@ -612,16 +569,292 @@ p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* -------------- Tablet Styles ---------- */
+@media screen and (min-width: 768px) {
+/*Tablet styles here*/
+ 
+/******** GLOBAL STYLES ********/
+  hero h1 {
+	  font-size: 3em;
+    line-height: 48px;
+    font-weight: bold;
+    padding-left: 60px;
+  }
+
+  h2 {
+	  font-size: 2.25em;
+    padding-top: 20px;
+  }
+
+  h3 {
+	  font-size: 1.5em;
+    line-height: 30px;
+  }
+
+  .content-wrapper {
+    width: 80%;
+  }
+
+/* --- BASE HEADER AND FOOTER STYLES --- */
+
+/* HEADER */
+
+/* Logo */
+  #logo-container {
+    border-bottom: none;
+    text-align: left;
+    width: 45%;
+  }
+
+  #logo-container img {
+    padding: 20px 0;
+    width: 50%;
+  }
+
+/* Navigation */
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: 20px 0;
+  }
+
+  nav {
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    width: 45%;
+  }
+
+  header nav ul {
+    width: 45%;
+  }
+
+/* FOOTER */
+  footer p {
+    line-height: 18px;
+  } 
+
+  footer .content-wrapper{
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+/* Contact section */
+  #contact-info,
+  #social {
+    width: 40%;
+  }
+
+/* Social section */
+  #social {
+    padding-bottom: 0px;
+  }
+
+  #copyright {
+    padding-bottom: 20px;
+  }
+
+/* ------------------- Tablet Styles - HOMEPAGE ----------------- */
+/* MAIN */
+
+/* Aside */
+
+  aside .content-wrapper {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .aside-text,
+  aside .sign-up-form {
+    width: 30%;
+    padding: 50px 0;
+  }
+
+  /* Features section */
+  .all-features {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  } 
+
+  .features-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 40%;
+  }
+
+  .features-section p {
+    width: 60%;
+  }
+
+/*Reviews section*/
+  #reviews {
+    justify-content: center;
+    flex-flow: row wrap;
+    padding-bottom: 70px;
+  }
+
+  #reviews .content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .team-review {
+    width: 40%;
+  }
+
+  .reviews-image {
+    padding-right: 15px;
+    width: 50%;
+  }
+
+/* ====================================
+Tablet Styles - ABOUT PAGE 
+======================================= */
+  #mission p {
+    width: 40%;
+  }
+
+  #mission .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 70px;
+  }
+
+  .map figure {
+    padding-bottom: 30%;
+  }
+
+  #address-info .content-wrapper {
+    padding: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .general-contact-info {
+    width: 50%;
+  }
+
+/*====================================
+Tablet styles - FAQ PAGE
+====================================== */
+  .faq .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 15.75px;
+  }
+
+  .question {
+    width: 40%;
+  }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* -------------- Desktop Styles - Homepage ---------- */
+@media screen and (min-width: 1200px) {
+  /******** GLOBAL STYLES ********/
+
+  /*Desktop styles here*/
+      
+  h1 {
+    font-size: 3.75em;
+    line-height: 60px;
+  }
+  
+  h3,
+  h4 {
+    font-size: 1.88em;
+  }
+  
+  p {
+    font-size: 1.125rem;
+    line-height: 24px;
+  }
+
+  .content-wrapper {
+    width: 60%;
+  }
+
+/* --- BASE HEADER AND FOOTER STYLES --- */
+
+/* FOOTER */
+  footer .content-wrapper{
+    justify-content: space-between;
+  }
+
+  #copyright {
+    padding-bottom: 20px;
+    padding-top: 70px;
+  }
+
+/* ------------------- Desktop Styles - HOMEPAGE ----------------- */
+/* MAIN */
+  #hero h1 {
+    width: 70%;
+  }
+
+/*Aside*/
+aside .content-wrapper {
+  justify-content: space-between;
 }
+
+.aside-text,
+  aside .sign-up-form {
+    width: 40%;
+  }
+
+/* Features section */
+  .features-section {
+    width: 30%;
+  }
+
+/*Reviews section*/
+  .reviews-image {
+    padding-right: 60px;
+  }
+
+/* ====================================
+Desktop Styles - ABOUT PAGE 
+======================================= */
+  .map figure {
+    padding-bottom: 30%;
+  }
+
+  #address-info .content-wrapper {
+    justify-content: space-between;
+  }
+
+/*====================================
+Desktop styles - FAQ PAGE
+====================================== */
+  .faq h4,
+  .faq p {
+    font-size: 1.125rem;
+    line-height: 18px;
+  }
+}
+
 
 /* ==========================================================================
    Print styles.
